@@ -1,0 +1,42 @@
+{
+  "name": "RxReactNativeBoilerplate",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "devtools": "remotedev --hostname=localhost --port=8000",
+    "web": "webpack-dev-server --port 3000 --config web/webpack.config.dev.js --inline --hot --colors"
+  },
+  "dependencies": {
+    "immutable": "^3.8.1",
+    "lodash": "4.11.1",
+    "react": "^15.2.1",
+    "react-native": "^0.34.0",
+    "react-native-web": "^0.0.45",
+    "react-native-lock": "^0.4.0",
+    "react-redux": "^4.4.5",
+    "redux": "3.5.2",
+    "redux-immutable": "^3.0.8",
+    "redux-logger": "^2.6.1",
+    "redux-observable": "^0.12.0",
+    "rxjs": "5.0.0-beta.12"
+  },
+  "description": "ReactNative/redux/observable/auth boilerplate which include immutable, rxjs, auth0 integration",
+  "author": "Brian Luan",
+  "email": "jznight@gmail.com",
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-1": "^6.5.0",
+    "babel-runtime": "^6.9.2",
+    "url-loader": "^0.5.7",
+    "redux-devtools": "^3.3.1",
+    "remote-redux-devtools": "^0.4.9",
+    "remotedev-server": "^0.2.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1"
+  }
+}
