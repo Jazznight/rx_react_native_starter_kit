@@ -16,9 +16,9 @@ const epicMiddleware = createEpicMiddleware(Epics);
 
 const enhancer = compose(
   applyMiddleware(epicMiddleware),
-  applyMiddleware(Logger),
+  __DEV__ && applyMiddleware(Logger),
   // Required! Enable Redux DevTools with the monitors you chose
-  DevTools,
+  __DEV__ && DevTools,
 );
 
 const configureStore = () => {
