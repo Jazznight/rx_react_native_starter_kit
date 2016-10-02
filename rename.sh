@@ -3,7 +3,7 @@
 newAppName=$1
 newLowerCaseName=`echo $newAppName | tr '[:upper:]' '[:lower:]'`
 
-appRoot=`dirname $0`/..
+appRoot=`dirname $0`
 
 [ -z "${newAppName}" ] && echo 'Missing required parameter newAppName' && exit 1
 
